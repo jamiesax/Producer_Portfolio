@@ -1,0 +1,80 @@
+.card {
+  background-color: #121212;
+  border: 1px solid #222222;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  border-color: #d97706;
+  transform: translateY(-2px);
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+.coverImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.playOverlayBtn {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background-color: #d97706;
+  color: #0a0a0a;
+  border: none;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.playOverlayBtn:hover {
+  background-color: #f59e0b;
+  transform: scale(1.05);
+}
+
+.content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+}
+
+.artist {
+  font-size: 0.9rem;
+  color: #a3a3a3;
+  margin: 0;
+}
+
+.meta {
+  display: flex;
+  gap: 12px;
+  font-size: 0.75rem;
+  color: #737373;
+  margin-top: 4px;
+  border-top: 1px solid #262626;
+  padding-top: 8px;
+}
